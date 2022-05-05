@@ -1,3 +1,5 @@
+
+
 window.addEventListener('scroll', function () {
     let header = document.querySelector('header');
     let windowPosition = window.scrollY > 0;
@@ -13,3 +15,9 @@ options.forEach(option=>{
     sBtn_text.innerText=selectedOption;
 
 })
+
+$("document").ready(function () {
+    $("#loginBtn").click(function () {
+        $("#loginmodal").modal("toggle");
+    });
+});
