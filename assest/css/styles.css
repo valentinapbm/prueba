@@ -62,7 +62,15 @@ main {
   height: auto;
   object-fit: cover;
   object-position: center center;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  border-radius: 12px;
+  z-index: 0;
+  position: relative; }
+
+.content-text {
+  width: 100%;
+  position: absolute;
+  z-index: 1; }
 
 @media (min-width: 372px) {
   .h1-span {
@@ -74,7 +82,10 @@ main {
     margin-right: 40px; }
   .h1-span {
     font-size: 32px;
-    line-height: 43px; } }
+    line-height: 43px; }
+  .module2 {
+    margin-left: 40px;
+    margin-right: 40px; } }
 
 @media (min-width: 1140px) {
   .module1 {
@@ -82,7 +93,10 @@ main {
     margin-right: 80px; }
   .h1-span {
     font-size: 38px;
-    line-height: 43px; } }
+    line-height: 43px; }
+  .module2 {
+    margin-left: 80px;
+    margin-right: 80px; } }
 
 @media (min-width: 1600px) {
   .module1 {
@@ -90,4 +104,7 @@ main {
     margin-right: auto; }
   .h1-span {
     font-size: 48px;
-    line-height: 43px; } }
+    line-height: 43px; }
+  .module2 {
+    margin-left: auto;
+    margin-right: auto; } }

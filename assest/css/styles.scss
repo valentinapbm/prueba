@@ -89,8 +89,10 @@ main {
 //2nd module
 .module2 {
     @include assign-margin(24px, 24px);
+    
 }
 .content-picture {
+    
     
 }
 
@@ -100,6 +102,24 @@ main {
     object-fit: cover;
     object-position: center center;
     vertical-align: bottom;
+    border-radius: 12px;
+    z-index: 0;
+    position: relative;
+}
+
+.content-text {
+    width: 100%;
+    position: absolute;
+    z-index: 1;   
+}
+
+.content
+
+.content-h1 {
+}
+
+.content-btn {
+    
 }
 
 //medias
@@ -119,6 +139,10 @@ main {
         font-size: 32px;
         line-height: 43px;
     }
+
+    .module2 {
+        @include assign-margin(40px, 40px);
+    }
 }
 
 @media (min-width: $medium) {
@@ -134,6 +158,10 @@ main {
         font-size: 38px;
         line-height: 43px;
     }
+
+    .module2 {
+        @include assign-margin(80px, 80px);
+    }
 }
 
 @media (min-width: $extra-large) {
@@ -144,5 +172,9 @@ main {
     .h1-span {
         font-size: 48px;
         line-height: 43px;
+    }
+
+    .module2 {
+        @include assign-margin(auto, auto);
     }
 }
