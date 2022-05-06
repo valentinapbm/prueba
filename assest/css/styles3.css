@@ -1,0 +1,329 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}
+
+.container1{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.nav1{
+    width: 95%;
+    height: 12rem;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255,255,255,.05);
+    transition: height .5s ease;
+    margin: 10px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family:'Nunito', sans-serif;
+}
+
+
+
+.nav1 .logo1{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+
+    margin-top: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-list1{
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    margin-left: 4rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.nav-link1{
+    margin: 0 2rem;
+    
+}
+
+.nav-link::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+}
+
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+#nav-cta{
+    display: inline-block;
+    background-color: #fff;
+    color: #313131;
+    padding: 0.5rem 0.5rem;
+    border-radius: 2rem;
+    transition: background-color .5s ease;
+    margin-top: 8px;
+    border:none;
+    
+}
+.icono{
+    padding: 5px;
+}
+#nav-cta:hover{
+    background-color: #d3d3d3;
+    
+}
+
+#nav-link2{
+    margin-top: 20px;
+    margin-left:15px;
+    margin-right:15px;
+    font-size: 0.99rem;
+    color: #fff;
+}
+
+#logoicono{
+    font-size: 2rem;
+}
+
+/* Hero Demo Content*/
+.hero{
+    width: 100%;
+    height: 200vh;
+    background: url("mountain-large.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Hero end*/
+
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+
+.scrolling-active .nav1{
+    height: 6.6rem;
+}
+
+.scrolling-active .nav1 a{
+    color: #FF5A5F;
+}
+.scrolling-active #nav-link2{
+    color: #FF5A5F;
+}
+
+.scrolling-active #nav-cta{
+    background-color: #313131;
+    color: #fff;
+}
+
+.scrolling-active #nav-cta:hover{
+    background-color: #151515;
+}
+#search{
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    border-radius: 10rem;
+    font-family:'Nunito', sans-serif;
+}
+.container1{
+    margin: 5px;
+    display: flex;
+}
+
+#search .search-option{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#search .search-option .item{
+align-self: center;
+padding: 10px 10px;
+font-size: 0.5rem;
+}
+#search .search-option h5{
+    color:black;
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+
+#search .search-option .item input{
+    border: none;
+    padding: 0;
+    font-size: 0.7rem;
+    font-family:'Nunito', sans-serif;
+}
+
+#search .search-option .btn-theme{
+    padding: 10px 20px;
+    background: #FF5A5F;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin:0;
+    box-shadow: 0;
+    text-transform: capitalize;
+    font-size: 2em;
+    border-radius: 15rem;
+    
+
+}
+
+.select-menu .options{
+    position: absolute;
+    right: 60px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 18px;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    font-family:'Nunito', sans-serif;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+    
+}
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+.options .option-text {
+    margin: 0px;
+}
+
+
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+
+
+
+.form__button__continue{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__buttons__sm{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+/*
+.loging__form{
+    width: 10px;
+}
+*/
+.form__buttons__sm__f, .form__buttons__sm__g, .form__buttons__sm__a, .form__buttons__sm__em {
+    margin-bottom: 10px;
+}
+
+.modal__header{
+    display: flex;
+    align-items: center !important;
+  
+    justify-content: center;
+
+}
+.modal__header__title{
+
+    flex:2;
+    text-align: center;
+    padding-top: 10px;
+}
+.modal__header__title--text{
+    font-size: 16px;
+}
+
+.form__button__continue{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form__buttons__sm__f__content, .form__buttons__sm__g__content, .form__buttons__sm__a__content, .form__buttons__sm__em__content{
+    display: flex;
+    flex-direction: row;
+}
+.form__button__country--text{
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+h3{
+    display: flex;
+    font-size: 20px !important;
+    
+}
+.modal-content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form__button__country{
+    border: 1px solid lightgrey;
+}
+
+select{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.form-group{
+    display: flex;
+}
+.form__group__select{
+    padding-left: 10px;
+}
+
+.form__select--icon i{
+    margin-left: 30px !important;
+}
+.form__body__politics--text{
+    font-size: 10px;
+    line-height: 100% !important;
+}
+.form__buttons__sm__f__content--icon, .form__buttons__sm__g__content--icon, .form__buttons__sm__a__content--icon, .form__buttons__sm__em__content--icon{
+    margin-right: 35%;
+}

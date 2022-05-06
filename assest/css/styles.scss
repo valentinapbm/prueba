@@ -122,6 +122,22 @@ main {
     
 }
 
+// tercer module
+
+.module3 {
+    @include assign-margin(24px, 24px);
+}
+
+  //carousel
+
+.melgar {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: bottom;
+}
+
 //medias
 
 @media (min-width: $extra-small) {

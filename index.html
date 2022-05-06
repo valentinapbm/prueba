@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link href="assest/css/styles1.css" rel="stylesheet">
+    <!--<link href="assest/css/styles1.css" rel="stylesheet">-->
     <link href="assest/css/styles.css" rel="stylesheet">
+    <link href="assest/css/styles3.css" rel="stylesheet">
     
 </head>
 <body>
@@ -43,14 +44,15 @@
                         <button id="nav-cta"><i class="fa-solid fa-bars icono"></i><i class="fas fa-user icono" id="login-btn"></i></button>
                     </div>
                     <ul class="options">
-                        <li class="option"><span class="option-text"><a role="button" id="loginBtn">Registrase</a></span></li>
+                        <li class="option text-black"><span class="option-text navbar-text"> <a role="button"  id="loginBtn">Registrase</a></span></li>
                         <li class="option"><span class="option-text">Inicia Sesión</span></li>
+                        <div class="dropdown-divider"></div>
                         <li class="option"><span class="option-text">Recibe huespedes en tu hogar</span></li>
                         <li class="option"><span class="option-text">Organiza una experiencia</span></li>
                         <li class="option"><span class="option-text">Ayuda</span></li>
                     </ul>
                 </div>
-                
+
                 <section id="search">
                         <div class="container1">
                         <div class="search-option">
@@ -78,49 +80,10 @@
                 </section>
             </nav>
 
-            <div id="loginmodal" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg" role="content">
-                    <div class="modal-content">
-                        <div class="modal-header modalHeader">
-                            <h4 class="modal-title"> Login</h4>
-                            <button type="button" class="close" data-dismiss="modal">
-                                &times;
-                            </button>
-                        </div>
-                        <div class="modal-body modalBody">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-4">
-                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
-                                            placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group col-sm-4">
-                                        <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                        <input type="password" class="form-control form-control-sm mr-1"
-                                            id="exampleInputPassword3" placeholder="Password">
-                                    </div>
-                                    <div class="col-sm-auto">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
-                                        data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-sm ml-1"><strong>Sign in</strong></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+            
         </div>
     </header>
-
     <main>
         <div class="container">
             <div class="module1">
@@ -164,16 +127,179 @@
                         <source srcset="https://a0.muscache.com/im/pictures/226ee7ed-8eb8-4e61-8366-3177dce0d3f8.jpg?im_w=320 1x, https://a0.muscache.com/im/pictures/226ee7ed-8eb8-4e61-8366-3177dce0d3f8.jpg?im_w=720 2x">
                         <img class="img-mod2" alt="Un huésped sale del porche de una casa" src="https://a0.muscache.com/im/pictures/226ee7ed-8eb8-4e61-8366-3177dce0d3f8.jpg?im_q=highq&amp;im_w=720">
                     </picture>
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <div class="module3">
+                <h2>Inspiración para tu próximo viaje.</h2>
+                <div>
+                   <div class="container-c">
+                       <div class="row">
+                           <div class="col-md-12">
+                               <div id="carousel-indicators" class="carousel slide">
+                                   <ol clase="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slice="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slice="1"></li>
+                                   </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="single-box">
+                                                        <div class="img-area"><img src="https://a0.muscache.com/im/pictures/06248faf-fafa-4adb-9447-3a393ca625a4.jpg?im_w=480"></div>
+                                                        <div class="img-text">
+                                                            <h2>Melgar</h2>
+                                                            <p>77 kilómetros de distancia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="single-box">
+                                                        <div class="img-area"><img src="https://a0.muscache.com/im/pictures/54582c41-77ef-4f41-aa88-6a4ed0068f4b.jpg?im_w=480"></div>
+                                                        <div class="img-text">
+                                                            <h2>La Vega</h2>
+                                                            <p>52 Kilómetros de distancia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="single-box">
+                                                        <div class="img-area"><img src="https://a0.muscache.com/im/pictures/ee86b8d6-b214-43f5-912c-3db2637a5724.jpg?im_w=480"></div>
+                                                        <div class="img-text">
+                                                            <h2>Medellín</h2>
+                                                            <p>247 kilómetros de distancia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="single-box">
+                                                        <div class="img-area"><img src="https://a0.muscache.com/im/pictures/1cdb5298-1e10-4d5a-ac27-20c80b53b4af.jpg?im_w=480"></div>
+                                                        <div class="img-text">
+                                                            <h2>Guatavita</h2>
+                                                            <p>46 kilómetros de distancia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
                 </div>
-                
             </div>
         </div>
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
     </main>
-    
+
+    <div id="loginmodal" class="loging__form modal fade " role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal__header">
+                    <div class = "modal__header__btn">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">x
+                        </button> 
+                    </div>
+                    <div class="modal__header__title">
+                        <h5 class = "modal__header__title--text"><strong>Iniciar sesion o registrarse</strong></h5>
+                    </div>
+                
+                </div>
+                <div class="modal-body modalBody">
+
+                    <div>
+                        <h3> <strong>Te damos la bienvenida a Airbnb</strong></h3>
+                    </div>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form__button__country">
+                                <label for = "country__select">
+                                    <div>
+                                        <div for = "country__select" class = "form__button__country--text"  >Pais/Region</div>
+                                    </div>
+                                </label>
+                                <div class="form-group">
+                                    <select id= "country__select" class="form__group__select">
+                                        <option value="1" selected>Estados Unidos (+1)</option>
+                                        <option value="2">Afganistan (+93)</option>
+                                        <option value="3">Albania (+93)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Numero de telefono">
+                            </div>
+                                <div class="form__body__politics">
+                                <p class="form__body__politics--text">Te vamos a confirmar el número por teléfono o mensaje de texto.
+                                     Sujeto a las tarifas estándar para mensajes y datos.  <a href="#politics">Política de privacidad</a> </p>
+                                </div>
+                    </form>
+
+                    <div class="form__button__continue">
+                        <button type="submit" class="btn btn-danger"><strong>Continua</strong></button>
+                    </div>
+
+                   
+                        <div class = "dropdown-divider">o</div>
+                 
+
+                    <div class="form__buttons__sm">
+                        <button type="submit" class="form__buttons__sm__f btn btn-outline-dark">
+                            <div class = "form__buttons__sm__f__content">
+                                <div class = "form__buttons__sm__f__content--icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__f__content--text">
+                                    Continua con Facebook
+                                </div>
+                            </div>
+                        </button>
+                        <button type="submit" class="form__buttons__sm__g btn btn-outline-dark">
+                            <div class = "form__buttons__sm__g__content">
+                                <div class = "form__buttons__sm__g__content--icon">
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__g__content--text">
+                                    Continua con Google
+                                </div>
+                            </div>
+
+                        </button>
+                        <button type="submit" class="form__buttons__sm__a btn btn-outline-dark">
+                            <div class = "form__buttons__sm__a__content">
+                                <div class = "form__buttons__sm__a__content--icon">
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__a__content--text">
+                                    Continua con Apple
+                                </div>
+                            </div>
+
+                        
+                        </button>
+                        <button type="submit" class="form__buttons__sm__em btn btn-outline-dark">
+                            <div class = "form__buttons__sm__em__content">
+                                <div class = "form__buttons__sm__em__content--icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__em__content--text">
+                                    Continua con el correo electronico
+                                </div>
+                            </div>                   
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

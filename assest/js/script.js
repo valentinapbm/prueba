@@ -16,8 +16,3 @@ options.forEach(option=>{
 
 })
 
-$("document").ready(function () {
-    $("#loginBtn").click(function () {
-        $("#loginmodal").modal("toggle");
-    });
-});

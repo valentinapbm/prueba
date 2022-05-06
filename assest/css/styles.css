@@ -72,6 +72,17 @@ main {
   position: absolute;
   z-index: 1; }
 
+.module3 {
+  margin-left: 24px;
+  margin-right: 24px; }
+
+.melgar {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  vertical-align: bottom; }
+
 @media (min-width: 372px) {
   .h1-span {
     font-size: 28px; } }
