@@ -1,9 +1,10 @@
-$extra-small:540px;
+$extra-small:372px;
 $small: 720px;
 $medium: 940px;
 $large: 1140px;
 $extra-large: 1600px;
 $rojo: #ff385c;
+$maxw: 1600px;
 
 //mixins
 
@@ -24,10 +25,20 @@ $rojo: #ff385c;
     padding-right: $pr;
 }
 
+main {
+    background: linear-gradient(#000 70%, #eee 30%);
+    display: grid;
+}
+
 //first module
 
+.container{
+    max-width: $maxw;
+    padding: 0;
+}
 
 .module1 {
+    @include assign-margin(24px, 24px);
     @include module-wraper (0px, 222px, 96px);
 }
 
@@ -35,14 +46,14 @@ $rojo: #ff385c;
     @include assign-padding(80px, 80px);
     min-height: 250px;
     max-height: 450px;
-    max-width: 1600px;
+    max-width: $maxw;
 
     background-color: $rojo;
     border-radius: 12px; 
 }
 
 .square-content {
-    padding: 11%;
+    padding: 11% 0px;
 }
 
 .content-h1 {
@@ -52,11 +63,10 @@ $rojo: #ff385c;
 }
 .h1-span {
     color: white;
-    font-size:38px;
+    font-size:25px;
     font-weight:600;
     letter-spacing:-0.02em;
-    line-height:48px;
-    line-height: 54px;
+    line-height:32px;
 }
 
 .content-btn {
@@ -64,40 +74,75 @@ $rojo: #ff385c;
 }
 
 .btn-span {
-    padding: 10px 19px;
+    padding: 8px 16px;
 
     border:1px solid #FFFFFF;
-    border-radius: 12px;
+    border-radius: 9px;
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 14px;
     font-weight: 200;
+    letter-spacing:-0.02em;
+    line-height:20px;
+}
+
+//2nd module
+.module2 {
+    @include assign-margin(24px, 24px);
+}
+.content-picture {
+    
+}
+
+.img-mod2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: bottom;
 }
 
 //medias
 
-@media (max-width: $extra-large) {
-    .container2 {
-        @include assign-margin(80px, 80px);
-        height: 80vh;
+@media (min-width: $extra-small) {
+    .h1-span {
+        font-size: 28px;
     }
 }
 
-@media (max-width: $large) {
-    .container2 {
+@media (min-width: $small) {
+    .module1 {
         @include assign-margin(40px, 40px);
+    }
+
+    .h1-span {
+        font-size: 32px;
+        line-height: 43px;
     }
 }
 
 @media (min-width: $medium) {
-    
+   
 }
 
-@media (max-width: $small) {
-    .container2 {
-        @include assign-margin(24px, 24px);
+@media (min-width: $large) {
+    .module1 {
+        @include assign-margin(80px, 80px);
+    }
+
+    .h1-span {
+        font-size: 38px;
+        line-height: 43px;
     }
 }
 
+@media (min-width: $extra-large) {
+    .module1{
+        @include assign-margin(auto, auto);
+    }
 
-
-
+    .h1-span {
+        font-size: 48px;
+        line-height: 43px;
+    }
+}

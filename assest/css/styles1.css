@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(#000 50%, #eee 50%);
+main {
+    background: linear-gradient(#000 70%, #eee 30%);
 }
 
 header{
@@ -241,34 +241,3 @@ font-size: 0.5rem;
 .options .option:hover{
     background: #F2F2F2;
 }
-
-/*Add by Manuel*/
-
-.container2 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px; }
-  
-  .first-module-wraper {
-    margin: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 222px;
-    padding-bottom: 96px; }
-  
-  .square {
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: #ff385c; }
-  
-  @media (max-width: 1600px) {
-    .container2 {
-      margin-left: 80px;
-      margin-right: 80px; } }
-  
-  @media (max-width: 1140px) {
-    .container2 {
-      margin-left: 40px;
-      margin-right: 40px; } }
-  
-  
