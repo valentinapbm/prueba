@@ -90,6 +90,16 @@ main {
 .container-c {
   margin-top: 15%; }
 
+.modulex {
+  display: flex;
+  overflow-x: scroll;
+  scroll-padding: 0 50%;
+  scroll-snap-type: x proximity; }
+
+.modulex div {
+  scroll-snap-align: center;
+  display: inline-block; }
+
 @media (min-width: 372px) {
   .module1 {
     margin-left: 24px;

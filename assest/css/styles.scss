@@ -149,6 +149,21 @@ main {
     margin-top: 15%;
 }
 
+//modulex
+
+.modulex {
+    display: flex;
+    overflow-x: scroll;
+    scroll-padding: 0 50%;
+    scroll-snap-type: x proximity;
+}
+
+.modulex div {
+    scroll-snap-align: center;
+    display: inline-block;
+
+}
+
 //medias
 
 @media (min-width: $extra-small) {
