@@ -1,12 +1,28 @@
-$extra-small:540px;
+$extra-small:372px;
 $small: 720px;
 $medium: 940px;
 $large: 1140px;
-$extra-large: 1600px;
+$extra-large: 1680px;
 $rojo: #ff385c;
+$maxw: 1600px;
 
 //mixins
 
+
+@mixin text-format-titles () {
+    color: white;
+    font-size:25px;
+    font-weight:600;
+    letter-spacing:-0.02em;
+    line-height:32px;
+}
+@mixin text-format-paragraph () {
+    color: white;
+    font-size:14px;
+    font-weight:200;
+    letter-spacing:-0.02em;
+    line-height:20px;
+}
 @mixin module-wraper ($px, $pt, $pb) {
     margin: 0px;
     padding-right: $px;
@@ -24,10 +40,27 @@ $rojo: #ff385c;
     padding-right: $pr;
 }
 
-//first module
+main {
+    background: linear-gradient(#000 50%, #eee 50%);
+    display: grid;
+    width: 100%;
+}
 
+
+
+.container{
+    width: 100%;
+    max-width: $maxw;
+    padding: 0;
+}
+.h1-mod {
+    @include text-format-titles();
+}
+
+// 1st module
 
 .module1 {
+    @include assign-margin(24px, 24px);
     @include module-wraper (0px, 222px, 96px);
 }
 
@@ -35,14 +68,14 @@ $rojo: #ff385c;
     @include assign-padding(80px, 80px);
     min-height: 250px;
     max-height: 450px;
-    max-width: 1600px;
+    max-width: $maxw;
 
     background-color: $rojo;
     border-radius: 12px; 
 }
 
 .square-content {
-    padding: 11%;
+    padding: 11% 0px;
 }
 
 .content-h1 {
@@ -50,54 +83,146 @@ $rojo: #ff385c;
     text-align: center;
     padding-bottom: 24px;
 }
-.h1-span {
-    color: white;
-    font-size:38px;
-    font-weight:600;
-    letter-spacing:-0.02em;
-    line-height:48px;
-    line-height: 54px;
-}
 
 .content-btn {
     text-align: center;
 }
 
 .btn-span {
-    padding: 10px 19px;
+    padding: 8px 16px;
 
     border:1px solid #FFFFFF;
-    border-radius: 12px;
+    border-radius: 9px;
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 14px;
     font-weight: 200;
+    letter-spacing:-0.02em;
+    line-height:20px;
+}
+
+// 2nd module
+.module2 {
+    @include assign-margin(24px, 24px);
+    
+}
+.mod2-content {
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+}
+
+.img-mod2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    vertical-align: bottom;
+    border-radius: 12px;
+    z-index: 0;
+}
+
+#mod2-h1 {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 112px;
+       
+}
+
+#mod2-btn {
+    width: 100%;
+    position: absolute; 
+    padding-bottom: 48px;
+}
+
+// 3th module
+
+.module3 {
+    @include assign-margin(24px, 24px);
+    padding-top: 96px;
+}
+
+
+  //carousel
+
+.container-c {
+    margin-top: 15%;
+}
+
+//modulex
+
+.modulex {
+    display: flex;
+    overflow-x: scroll;
+    scroll-padding: 0 50%;
+    scroll-snap-type: x proximity;
+}
+
+.modulex div {
+    scroll-snap-align: center;
+    display: inline-block;
+
 }
 
 //medias
 
-@media (max-width: $extra-large) {
-    .container2 {
-        @include assign-margin(80px, 80px);
-        height: 80vh;
+@media (min-width: $extra-small) {
+    .module1 {
+        @include assign-margin(24px, 24px);
+    }
+    .h1-mod {
+        font-size: 28px;
+    }
+    .modelo2 {
+        @include assign-margin(24px, 24px)
     }
 }
 
-@media (max-width: $large) {
-    .container2 {
+@media (min-width: $small) {
+    .module1 {
+        @include assign-margin(40px, 40px);
+    }
+
+    .h1-mod {
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .module2 {
         @include assign-margin(40px, 40px);
     }
 }
 
 @media (min-width: $medium) {
-    
+   
 }
 
-@media (max-width: $small) {
-    .container2 {
-        @include assign-margin(24px, 24px);
+@media (min-width: $large) {
+    .module1 {
+        @include assign-margin(80px, 80px);
+    }
+
+    .h1-mod {
+        font-size: 38px;
+        line-height: 43px;
+    }
+
+    .module2 {
+        @include assign-margin(80px, 80px);
     }
 }
 
+@media (min-width: $extra-large) {
+    .module1{
+        @include assign-margin(auto, auto);
+    }
 
+    .h1-mod {
+        font-size: 48px;
+        line-height: 43px;
+    }
 
-
+    .module2 {
+        @include assign-margin(auto, auto);
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="assest/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <nav class="nav1">
+                <a href="index.html" class="logo1"><i class="fa-brands fa-airbnb" id="logoicono"></i>airbnb</a>
+                <ul class="nav-list1">
+                    <li>
+                        <a href="#" class="nav-link1">Lugares para quedarse</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link1">Experiencias</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link1">Experiencias en linea</a>
+                    </li>
+                </ul>
+                
+                <a href="#" id="nav-link2">Hazte anfitrion</a>
+                <a href="#" id="nav-link2"><i class="fa-solid fa-globe icono"></i></a>
+                <div class="select-menu">
+                    <div class="select-btn">
+                        <button id="nav-cta"><i class="fa-solid fa-bars icono"></i><i class="fas fa-user icono" id="login-btn"></i></button>
+                    </div>
+                <ul class="options">
+                    <li class="option text-black"><span class="option-text navbar-text"> <a role="button" class="btn" id="loginBtn">Registrase</a></span></li>
+                    <li class="option"><span class="option-text">Inicia Sesión</span></li>
+                    <div class="dropdown-divider"></div>
+                    <li class="option"><span class="option-text">Recibe huespedes en tu hogar</span></li>
+                    <li class="option"><span class="option-text">Organiza una experiencia</span></li>
+                    <li class="option"><span class="option-text">Ayuda</span></li>
+                </ul>
+            </div>
+                <section id="search">
+                        <div class="container1">
+                        <div class="search-option">
+                            <div class="item">
+                                <h5 class="h5">Ubicación</h5>
+                                <input type="text" class="form-control" name="" id="" placeholder="¿A donde vas?">
+                            </div>
+                            <div class="item">
+                                <h5 class="h5">Llegada</h5>
+                                <input type="date" class="form-control" name="" id="" placeholder="Agrega fechas">
+                            </div>
+                            <div class="item">
+                                <h5 class="h5">Salida</h5>
+                                <input type="date" class="form-control" name="" id="" placeholder="Agrega fechas">
+                            </div>
+                            <div class="item">
+                                <h5 class="h5">Huéspedes</h5>
+                                <input type="text" class="form-control" name="" id="" placeholder="¿Cuántos?">
+                            </div>
+                            <div class="item">
+                                <button class="btn btn-theme"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <div id="loginmodal" class="loging__form modal fade " role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal__header">
+                    <div class = "modal__header__btn">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">x
+                        </button> 
+                    </div>
+                    <div class="modal__header__title">
+                        <h5 class = "modal__header__title--text"><strong>Iniciar sesion o registrarse</strong></h5>
+                    </div>
+                
+                </div>
+                <div class="modal-body modalBody">
+
+                    <div>
+                        <h3> <strong>Te damos la bienvenida a Airbnb</strong></h3>
+                    </div>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form__button__country">
+                                <label for = "country__select">
+                                    <div>
+                                        <div for = "country__select" class = "form__button__country--text"  >Pais/Region</div>
+                                    </div>
+                                </label>
+                                <div class="form-group">
+                                    <select id= "country__select" class="form__group__select">
+                                        <option value="1" selected>Estados Unidos (+1)</option>
+                                        <option value="2">Afganistan (+93)</option>
+                                        <option value="3">Albania (+93)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Numero de telefono">
+                            </div>
+                                <div class="form__body__politics">
+                                <p class="form__body__politics--text">Te vamos a confirmar el número por teléfono o mensaje de texto.
+                                     Sujeto a las tarifas estándar para mensajes y datos.  <a href="#politics">Política de privacidad</a> </p>
+                                </div>
+                    </form>
+
+                    <div class="form__button__continue">
+                        <button type="submit" class="btn btn-danger"><strong>Continua</strong></button>
+                    </div>
+
+                   
+                        <div class = "dropdown-divider">o</div>
+                 
+
+                    <div class="form__buttons__sm">
+                        <button type="submit" class="form__buttons__sm__f btn btn-outline-dark">
+                            <div class = "form__buttons__sm__f__content">
+                                <div class = "form__buttons__sm__f__content--icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__f__content--text">
+                                    Continua con Facebook
+                                </div>
+                            </div>
+                        </button>
+                        <button type="submit" class="form__buttons__sm__g btn btn-outline-dark">
+                            <div class = "form__buttons__sm__g__content">
+                                <div class = "form__buttons__sm__g__content--icon">
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__g__content--text">
+                                    Continua con Google
+                                </div>
+                            </div>
+
+                        </button>
+                        <button type="submit" class="form__buttons__sm__a btn btn-outline-dark">
+                            <div class = "form__buttons__sm__a__content">
+                                <div class = "form__buttons__sm__a__content--icon">
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__a__content--text">
+                                    Continua con Apple
+                                </div>
+                            </div>
+
+                        
+                        </button>
+                        <button type="submit" class="form__buttons__sm__em btn btn-outline-dark">
+                            <div class = "form__buttons__sm__em__content">
+                                <div class = "form__buttons__sm__em__content--icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div lass = "form__buttons__sm__em__content--text">
+                                    Continua con el correo electronico
+                                </div>
+                            </div>
+
+
+
+                            
+                            
+                        
+                        </button>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hero"></section>
+    <section class="demo-content"></section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assest/js/script.js"></script>
+    <script>
+    $("document").ready(function () {
+    $("#loginBtn").click(function () {
+        $("#loginmodal").modal("toggle");
+    });
+});
+    </script>
+</body>
+</html>

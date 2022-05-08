@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(#000 50%, #eee 50%);
+main {
+    background: linear-gradient(#000 70%, #eee 30%);
 }
 
 header{
@@ -242,33 +242,90 @@ font-size: 0.5rem;
     background: #F2F2F2;
 }
 
-/*Add by Manuel*/
+/*Jhonatan*/
 
-.container2 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px; }
+.form__button__continue{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__buttons__sm{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.loging__form{
+    width: 10px;
+}
+
+.form__buttons__sm__f, .form__buttons__sm__g, .form__buttons__sm__a, .form__buttons__sm__em {
+    margin-bottom: 10px;
+}
+
+.modal__header{
+    display: flex;
+    align-items: center !important;
   
-  .first-module-wraper {
-    margin: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 222px;
-    padding-bottom: 96px; }
-  
-  .square {
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: #ff385c; }
-  
-  @media (max-width: 1600px) {
-    .container2 {
-      margin-left: 80px;
-      margin-right: 80px; } }
-  
-  @media (max-width: 1140px) {
-    .container2 {
-      margin-left: 40px;
-      margin-right: 40px; } }
-  
-  
+    justify-content: center;
+
+}
+.modal__header__title{
+
+    flex:2;
+    text-align: center;
+    padding-top: 10px;
+}
+.modal__header__title--text{
+    font-size: 16px;
+}
+
+.form__button__continue{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form__buttons__sm__f__content, .form__buttons__sm__g__content, .form__buttons__sm__a__content, .form__buttons__sm__em__content{
+    display: flex;
+    flex-direction: row;
+}
+.form__button__country--text{
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+h3{
+    display: flex;
+    font-size: 20px !important;
+    
+}
+.modal-content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.form__button__country{
+    border: 1px solid lightgrey;
+}
+
+select{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.form-group{
+    display: flex;
+}
+.form__group__select{
+    padding-left: 10px;
+}
+
+.form__select--icon i{
+    margin-left: 30px !important;
+}
+.form__body__politics--text{
+    font-size: 10px;
+    line-height: 100% !important;
+}
+.form__buttons__sm__f__content--icon, .form__buttons__sm__g__content--icon, .form__buttons__sm__a__content--icon, .form__buttons__sm__em__content--icon{
+    margin-right: 35%;
+}
