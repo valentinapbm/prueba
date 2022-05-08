@@ -2,12 +2,27 @@ $extra-small:372px;
 $small: 720px;
 $medium: 940px;
 $large: 1140px;
-$extra-large: 1600px;
+$extra-large: 1680px;
 $rojo: #ff385c;
 $maxw: 1600px;
 
 //mixins
 
+
+@mixin text-format-titles () {
+    color: white;
+    font-size:25px;
+    font-weight:600;
+    letter-spacing:-0.02em;
+    line-height:32px;
+}
+@mixin text-format-paragraph () {
+    color: white;
+    font-size:14px;
+    font-weight:200;
+    letter-spacing:-0.02em;
+    line-height:20px;
+}
 @mixin module-wraper ($px, $pt, $pb) {
     margin: 0px;
     padding-right: $px;
@@ -26,16 +41,23 @@ $maxw: 1600px;
 }
 
 main {
-    background: linear-gradient(#000 70%, #eee 30%);
+    background: linear-gradient(#000 50%, #eee 50%);
     display: grid;
+    width: 100%;
 }
 
-//first module
+
 
 .container{
+    width: 100%;
     max-width: $maxw;
     padding: 0;
 }
+.h1-mod {
+    @include text-format-titles();
+}
+
+// 1st module
 
 .module1 {
     @include assign-margin(24px, 24px);
@@ -61,13 +83,6 @@ main {
     text-align: center;
     padding-bottom: 24px;
 }
-.h1-span {
-    color: white;
-    font-size:25px;
-    font-weight:600;
-    letter-spacing:-0.02em;
-    line-height:32px;
-}
 
 .content-btn {
     text-align: center;
@@ -86,63 +101,65 @@ main {
     line-height:20px;
 }
 
-//2nd module
+// 2nd module
 .module2 {
     @include assign-margin(24px, 24px);
     
 }
-.content-picture {
-    
-    
+.mod2-content {
+    align-items: flex-end;
+    position: relative;
+    display: flex;
 }
 
 .img-mod2 {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    object-position: center center;
+    
     vertical-align: bottom;
     border-radius: 12px;
     z-index: 0;
-    position: relative;
 }
 
-.content-text {
+#mod2-h1 {
     width: 100%;
     position: absolute;
-    z-index: 1;   
+    padding-bottom: 112px;
+       
 }
 
-.content
-
-.content-h1 {
+#mod2-btn {
+    width: 100%;
+    position: absolute; 
+    padding-bottom: 48px;
 }
 
-.content-btn {
-    
-}
-
-// tercer module
+// 3th module
 
 .module3 {
     @include assign-margin(24px, 24px);
+    padding-top: 96px;
 }
+
 
   //carousel
 
-.melgar {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center center;
-    vertical-align: bottom;
+.container-c {
+    margin-top: 15%;
 }
 
 //medias
 
 @media (min-width: $extra-small) {
-    .h1-span {
+    .module1 {
+        @include assign-margin(24px, 24px);
+    }
+    .h1-mod {
         font-size: 28px;
+    }
+    .modelo2 {
+        @include assign-margin(24px, 24px)
     }
 }
 
@@ -151,7 +168,7 @@ main {
         @include assign-margin(40px, 40px);
     }
 
-    .h1-span {
+    .h1-mod {
         font-size: 32px;
         line-height: 43px;
     }
@@ -170,7 +187,7 @@ main {
         @include assign-margin(80px, 80px);
     }
 
-    .h1-span {
+    .h1-mod {
         font-size: 38px;
         line-height: 43px;
     }
@@ -185,7 +202,7 @@ main {
         @include assign-margin(auto, auto);
     }
 
-    .h1-span {
+    .h1-mod {
         font-size: 48px;
         line-height: 43px;
     }
